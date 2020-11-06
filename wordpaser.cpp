@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string.h>
-using namespace std;
+#include<iomanip> 
+ using namespace std;
  int main()
 {  int k,m=0;
    char flag[600];
@@ -17,7 +18,10 @@ using namespace std;
       { 
          break;
       }
-}
-    cout<<"the number of words in your paragraph is"<<m+1<<endl;
-    cout<<"the number of letters in your paragraph is"<<m-k<<endl;
+  }
+    cout<<"the number of words in your paragraph is "<<m+1<<endl;
+    cout<<"the number of letters in your paragraph is "<<k-m<<endl;
+    float d;
+    d=(float)(k-m)/(m+1);
+    cout<<"average letters in the word is "<<setprecision(2)<<d<<endl;
 }
