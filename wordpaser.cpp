@@ -1,36 +1,38 @@
 #include<iostream>
 
 using namespace std;
-int spacechecker(char[500],int &);
+void spacechecker(char[600],int &no_space);
 int main()
 {
+   char flag[600]="                                                                                                                                                                                                                                                                                                            ";
+   cout<<"enter the paragraph"<<endl;
+   cin.getline(flag,600);
+   int no_space=0;
+   spacechecker(flag,no_space);
 
-
-
-
-    
+   cout<<no_space<<"main";
 }
-int spacechecker(char chr[500],&no_space)
-{
+void spacechecker(char chr[600],int &no_space)
+{  
     int iden1=0;
     int iden2=0;
-    for(int i=0;i<500;i++)
+    char ch=(char)' ';
+    for(int i=0;i<600;i++)
     {   
-        if(chr[i]=='/0')
+        if(chr[i]==ch)
         {   
             iden1=1;
+            if(iden1==1&&iden2==1)
+            {   cout<<chr[i]<<"break";
+                break;
+            }
+          // cout<<chr[i]<<no_space<<"i="<<i<<"no space"<<endl;
             no_space++;
         }
-        if(chr[i]!='\0')
+        if(chr[i]!=ch)
         {
             iden1=0;
         }
-        if(iden1==1&&iden2==1)
-        {
-            break;
-        }
-        iden2=iden1;
-      
-    }return no_space;
-
+        iden2=iden1;  
+    }
 }
