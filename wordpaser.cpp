@@ -1,16 +1,18 @@
 #include<iostream>
 
 using namespace std;
-int spacechecker(char[500],int &);
+int spacechecker(char[600],int &);
 int main()
 {
+   char flag[600];
+   cout<<"enter the paragraph"<<endl;
+   cin.getline(flag,600);
 
-
-
+ 
 
     
 }
-int spacechecker(char chr[500],&no_space)
+int spacechecker(char chr[600],&no_space)
 {
     int iden1=0;
     int iden2=0;
