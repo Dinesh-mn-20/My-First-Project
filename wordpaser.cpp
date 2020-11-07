@@ -3,9 +3,9 @@
 #include<iomanip> 
  using namespace std;
  int main()
-{  int k,m=0;
+{  int k,m=0;                 //m is the number of spaces and k is number of character present
    char flag[600];
-   cout<<"enter the paragraph"<<endl;
+   cout<<"Enter the paragraph:"<<endl;
    cin.getline(flag,600);
    k=strlen(flag);
     for(int i=0;i<600;i++)
@@ -19,9 +19,9 @@
          break;
       }
   }
-    cout<<"the number of words in your paragraph is "<<m+1<<endl;
-    cout<<"the number of letters in your paragraph is "<<k-m<<endl;
+    cout<<"Number of words in your paragraph is "<<m+1<<endl;
+    cout<<"Number of letters in your paragraph is "<<k-m<<endl;
     float d;
     d=(float)(k-m)/(m+1);
-    cout<<"average letters in the word is "<<setprecision(3)<<d<<endl;
+    cout<<"On an average no. of letters in the word is "<<setprecision(3)<<d<<endl;
 }
