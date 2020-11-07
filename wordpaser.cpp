@@ -7,17 +7,14 @@
    char flag[600];
    cout<<"Enter the paragraph:"<<endl;
    cin.getline(flag,600);
-   k=strlen(flag);
-    for(int i=0;i<600;i++)
+   k=strlen(flag); 
+    for(int i=0;i<k;i++)
   {  
     if(flag[i]==' ')
       {   
          m++;
       }
-    if(i==k)
-      { 
-         break;
-      }
+     
   }
     cout<<"Number of words in your paragraph is "<<m+1<<endl;
     cout<<"Number of letters in your paragraph is "<<k-m<<endl;
