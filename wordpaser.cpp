@@ -23,5 +23,5 @@
     cout<<"Number of letters in your paragraph is "<<k-m<<endl;
     float d;
     d=(float)(k-m)/(m+1);
-    cout<<"On an average no. of letters in the word is "<<setprecision(2)<<d<<endl;
+    cout<<"On an average no. of letters in the word is "<<setprecision(3)<<d<<endl;
 }
